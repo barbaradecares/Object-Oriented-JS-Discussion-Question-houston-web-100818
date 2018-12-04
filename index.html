@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    .new {background-image: url('https://i.imgur.com/9hVIbXq.jpg'); background-size: contain;}
-    .attack {background-image: url('https://i.imgur.com/VmEgv43.jpg'); background-size: contain;}
-    .defend {background-image: url('https://i.imgur.com/IsvV6Bx.jpg?1'); background-size: contain;}
-    .heal {background-image: url('https://i.imgur.com/Vtr4rqv.jpg'); background-size: contain;}
-    .breakdance { background-image: url('https://i.imgur.com/oJBdASf.jpg'); background-size: contain;}
-    .eat { background-image: url('https://i.imgur.com/xTX6Gl7.jpg'); background-size: contain;}
-    .btn { width: 100%; margin: 1em;}
-
-  </style>
-  <title>Unicorn Alley</title>
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <h2>Actions</h2>
-        <div><button id="restart" class="btn">Restart</button></div>
-        <div><button id="attack" class="btn">Attack</button></div>
-        <div><button id="defend" class="btn">Defend</button></div>
-        <div><button id="heal" class="btn">Heal</button></div>
-        <div><button id="breakdance" class="btn">Breakdance</button></div>
-        <div><button id="eat" class="btn">Eat Cronut</button></div>
-
-      </div>
-      <div class="col-md-8 text-center">
-        <h2>Events</h2>
-        <div id="image_area" style="width: 140px; height: 158px; margin: 0 auto;"></div>
-        <div id="event_area">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      .new {
+        background-image: url("https://i.imgur.com/9hVIbXq.jpg");
+        background-size: contain;
+      }
+      .attack {
+        background-image: url("https://i.imgur.com/VmEgv43.jpg");
+        background-size: contain;
+      }
+      .defend {
+        background-image: url("https://i.imgur.com/IsvV6Bx.jpg?1");
+        background-size: contain;
+      }
+      .heal {
+        background-image: url("https://i.imgur.com/Vtr4rqv.jpg");
+        background-size: contain;
+      }
+      .breakdance {
+        background-image: url("https://i.imgur.com/oJBdASf.jpg");
+        background-size: contain;
+      }
+      .eat {
+        background-image: url("https://i.imgur.com/xTX6Gl7.jpg");
+        background-size: contain;
+      }
+      .btn {
+        width: 100%;
+        margin: 1em;
+      }
+    </style>
+    <title>Unicorn Alley</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <h2>Actions</h2>
+          <div><button id="restart" class="btn">Restart</button></div>
+          <div><button id="attack" class="btn">Attack</button></div>
+          <div><button id="defend" class="btn">Defend</button></div>
+          <div><button id="heal" class="btn">Heal</button></div>
+          <div><button id="breakdance" class="btn">Breakdance</button></div>
+          <div><button id="eat" class="btn">Eat Cronut</button></div>
+        </div>
+        <div class="col-md-8 text-center">
+          <h2>Events</h2>
+          <div
+            id="image_area"
+            style="width: 140px; height: 158px; margin: 0 auto;"
+          ></div>
+          <div id="event_area"></div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script language="Javascript" src="func-index.js"></script>
-  <!-- <script src="oo-index.js"></script> -->
-</body>
+    <script language="Javascript" src="oo-index.js"></script>
+    <!-- <script src="oo-index.js"></script> -->
+  </body>
 </html>
